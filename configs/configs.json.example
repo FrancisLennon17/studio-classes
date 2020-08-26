@@ -1,0 +1,7 @@
+{
+    "Hostname": "0.0.0.0", 
+    "Port": 8080,
+    "DBUser": "joeblogs",
+    "DBPassword": "",
+    "DBName": "studio"
+}
