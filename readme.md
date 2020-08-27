@@ -44,4 +44,4 @@ https://www.getpostman.com/collections/63dc832c827574bf8ee7
 - Add config package tests
 - Add additional request body validation
 - Implement consistant linting rules
-- Add additional config for dbTimeout & max gym capacity
+- Add additional config for dbTimeout, Db drivers, max gym capacity

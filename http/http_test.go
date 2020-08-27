@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	glog "github.com/labstack/gommon/log"
 	internalHttp "github.com/francislennon17/studio-classes/http"
 	"github.com/francislennon17/studio-classes/data"
 	"github.com/francislennon17/studio-classes/data/mock"
@@ -19,9 +18,7 @@ import (
 var mockArgs mock.Args
 
 func newTestRouter(dataSource data.Source) *echo.Echo {
-	router := internalHttp.NewRouter(dataSource)
-	router.Logger.SetLevel(glog.OFF)
-	return router
+	return internalHttp.NewRouter(dataSource)
 }
 
 var _ = Describe("Http", func() {
